@@ -32,3 +32,40 @@ footer a {
     text-decoration: none; 
     font-weight: bold; 
 }
+
+main {
+    display: flex;
+    gap: 20px; 
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+
+.content-box {
+    background-color: white; 
+    padding: 15px; 
+    border-radius: 8px; 
+    flex: 1; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.highlight {
+    background-color: #e0f2fe;
+    padding: 10px;
+}
+
+#equipment-section img{
+    display: block; 
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 6px; 
+    max-width: 100%; 
+}
+
+#fun_facts img {
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 10px; 
+    border-radius: 6px; 
+    max-width: 100%; 
+}
