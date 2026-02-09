@@ -78,6 +78,7 @@ main {
     margin-top: 10px; /* Space above the image */
     border-radius: 6px; /* Rounded corners for images */
     max-width: 100%; /* Ensures image fits within container */
+    height: auto; /* Maintains aspect ratio */
 }
 
 #fun_facts img {
@@ -85,5 +86,6 @@ main {
     margin: 0 auto; 
     margin-top: 10px; 
     border-radius: 6px; 
-    max-width: 100%; 
+    max-width: 100%;
+    height: auto; 
 }
