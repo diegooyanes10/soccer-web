@@ -90,20 +90,25 @@ main {
     height: auto; 
 }
 
+/* Media query for smaller screens to improve responsiveness */
 @media (max-width: 768px) {
 
+    /* Stack sections vertically on small screens */
     main {
         flex-direction: column;
     }
-    
+
+    /* Reduce header padding for better spacing on mobile */
     header {
         padding: 15px;
     }
 
+    /* Improve readability on small devices */
     body {
         font-size: 16px;
     }
 
+    /* Add spacing between sections */
     .content-box {
         margin-bottom: 15px;
     }
