@@ -7,7 +7,11 @@
     <!-- Improves SEO and describes the page content -->
     <meta name="description" content="Website that explains soccer rules, equipment, and fun facts.">
     <title>Basic Soccer Rules</title> <!-- Page title that appears in the browser tab -->
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- Connecting Bootstrap framework to the page -->
+    <!-- Above the CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS file for project-specific styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header of the page -->
@@ -15,47 +19,55 @@
         <h1>Basic Soccer Rules</h1> <!-- Main visible title -->
     </header>
 
-    <!-- Main content of the page -->
-    <main>
-        <!-- Section 1 -->
-        <!-- In this section I had a class that we can use later in CSS -->
-        <section class="content-box highlight">
-            <h2>Introduction to Soccer</h2> <!-- Section subtitle -->
-            <p>Soccer, also known as football in many countries, is the most popular sport in the world. Millions of people watch and play soccer every day, from local games to international tournaments.</p> <!-- First paragraph -->
-            <p>Understanding the basic rules of soccer is essential for anyone who wants to play or follow the game. These rules ensure that the game is fair, organized, and enjoyable for everyone.</p> <!-- Second paragraph -->
-        </section>
+    <!-- Main content container using Bootstrap -->
+    <main class="container my-4">
+        <!-- row organizes content horizontally -->
+        <div class="row g-4">
+            <!-- Section 1 -->
+            <!-- creates a 3-column layout on medium screens and above -->
+            <div class="col-md-4">
+                <section class="content-box highlight h-100">
+                    <h2>Introduction to Soccer</h2><!-- Section subtitle -->
+                    <p>Soccer, also known as football in many countries, is the most popular sport in the world. Millions of people watch and play soccer every day, from local games to international tournaments.</p> <!-- First paragraph -->
+                    <p>Understanding the basic rules of soccer is essential for anyone who wants to play or follow the game. These rules ensure that the game is fair, organized, and enjoyable for everyone.</p> <!-- Second paragraph -->
+                </section>
+            </div>
 
-        <!-- Section 2 -->
-        <!-- Another section using the same class to style it later in CSS -->
-        <section class="content-box highlight">
-            <h2>General Rules</h2>
-            <p>A soccer match is played between two teams, each with eleven players. The game lasts 90 minutes, divided into two halves of 45 minutes each. The main objective is to score more goals than the opponent.</p>
-            <p>The game starts with a kickoff at the center of the field. Players must follow certain rules to avoid fouls and keep the match fair. The team with the most goals at the end of the match wins.</p>
-            <ul> <!-- Unordered list -->
-                <li>Match duration</li>
-                <li>Number of players</li>
-                <li>How to start the game</li>
-                <li>No use of hands (except by the goalkeeper)</li>
-                <li>Rules for fouls and free kicks</li>
-            </ul>
-        </section>
+            <!-- Section 2 -->
+            <div class="col-md-4">
+                <section class="content-box highlight h-100">
+                    <h2>General Rules</h2>
+                    <p>A soccer match is played between two teams, each with eleven players. The game lasts 90 minutes, divided into two halves of 45 minutes each. The main objective is to score more goals than the opponent.</p>
+                    <p>The game starts with a kickoff at the center of the field. Players must follow certain rules to avoid fouls and keep the match fair. The team with the most goals at the end of the match wins.</p>
+                    <ul> <!-- Unordered list -->
+                        <li>Match duration</li>
+                        <li>Number of players</li>
+                        <li>How to start the game</li>
+                        <li>No use of hands (except by the goalkeeper)</li>
+                        <li>Rules for fouls and free kicks</li>
+                    </ul>
+                </section>
+            </div>
 
-        <!-- Section 3 -->
-        <!-- This section has an ID to target it specifically in CSS -->
-        <section class="content-box highlight" id="equipment-section">
-            <h2>Equipment</h2>
-            <p>Players need basic equipment to play soccer safely. This includes a soccer ball, cleats, shin guards, and a uniform. Each piece of equipment helps the players perform better and stay protected during the game.</p>
-            <p>The soccer ball is usually made of synthetic leather and must meet official size and weight standards. Proper footwear allows players to move quickly and control the ball more effectively.</p>
-            <!-- Descriptive alt text helps screen readers understand the image -->
-            <img src="images/equipment.jpeg" alt="Soccer ball, cleats, shin guards, and uniform used by players" width="300"> <!-- Image of soccer equipment -->
-        </section>
+            <!-- Section 3 -->
+            <!-- This section has an ID to target it specifically in CSS -->
+            <div class="col-md-4">
+                <section class="content-box highlight h-100" id="equipment-section">
+                    <h2>Equipment</h2>
+                    <p>Players need basic equipment to play soccer safely. This includes a soccer ball, cleats, shin guards, and a uniform. Each piece of equipment helps the players perform better and stay protected during the game.</p>
+                    <p>The soccer ball is usually made of synthetic leather and must meet official size and weight standards. Proper footwear allows players to move quickly and control the ball more effectively.</p>
+                    <!-- Descriptive alt text helps screen readers understand the image -->
+                    <img src="images/equipment.jpeg" alt="Soccer ball, cleats, shin guards, and uniform used by players" width="300" class="img-fluid">
+                </section>
+            </div>
+        </div>
     </main>
 
-    <!-- Footer with link to the second page -->
+    <!-- Footer with button to the second page -->
     <footer>
-        <!-- Navigation section improves accessibility and semantic structure -->
         <nav>
-            <a href="page2.html">Read more on Page 2</a>
+            <!-- Bootstrap button styling applied to link -->
+            <a href="page2.html" class="btn btn-primary">Read more on Page 2</a>
         </nav>
     </footer>
 </body>
