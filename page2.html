@@ -7,6 +7,8 @@
     <!-- Improves SEO and describes the page content -->
     <meta name="description" content="Website that explains soccer rules, equipment, and fun facts.">
     <title>Advanced Soccer Rules & Fun Facts</title> <!-- Title in the browser tab -->
+    <!-- Bootstrap framework connection -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,36 +17,44 @@
         <h1>Advanced Soccer Rules & Fun Facts</h1> <!-- Main visible title -->
     </header>
 
-    <!-- Main content -->
-    <main>
-        <!-- Section 1 -->
-        <!-- This section has a class for styling in CSS -->
-        <section class="content-box">
-            <h2>Advanced Rules</h2> <!-- Section subtitle -->
-            <p>Soccer also has advanced rules that help referees control the game. One of the most important is the offside rule, which prevents players from gaining an unfair advantage by staying close to the opponent’s goal.</p> <!-- Paragraph 1 -->
-            <p>Other advanced rules include fouls, free kicks, throw-ins, corner kicks, and penalty kicks. These rules ensure fair play and help organize the game in different situations.</p> <!-- Paragraph 2 -->
-            <ol> <!-- Ordered list -->
-                <li>Direct free kick – awarded for major fouls</li>
-                <li>Indirect free kick – awarded for minor infractions</li>
-                <li>Penalty kick – awarded when a foul occurs inside the penalty area</li>
-            </ol>
-        </section>
+    <!-- Bootstrap container -->
+    <main class="container my-4">
+        <!-- Grid layout -->
+        <div class="row g-4">
+            <!-- Section 1 -->
+            <div class="col-md-6">
+                <section class="content-box h-100">
+                    <h2>Advanced Rules</h2><!-- Section subtitle -->
+                    <p>Soccer also has advanced rules that help referees control the game. One of the most important is the offside rule, which prevents players from gaining an unfair advantage by staying close to the opponent’s goal.</p> <!-- Paragraph 1 -->
+                    <p>Other advanced rules include fouls, free kicks, throw-ins, corner kicks, and penalty kicks. These rules ensure fair play and help organize the game in different situations.</p> <!-- Paragraph 2 -->
 
-        <!-- Section 2 -->
-         <!-- This section has an ID to style it individually in CSS -->
-        <section class="content-box" id="fun_facts">
-            <h2>Fun Facts</h2> <!-- Section subtitle -->
-            <p>Soccer is full of interesting facts and records. The fastest goal ever scored was in just a few seconds, and some players have scored hundreds of goals in their careers.</p> <!-- Paragraph 1 -->
-            <p>The largest stadiums in the world can hold over 100,000 spectators. Famous matches like the World Cup finals attract viewers from every country. Soccer is not only a sport but also a global cultural phenomenon.</p> <!-- Paragraph 2 -->
-            <!-- Descriptive alt text helps screen readers understand the image -->
-            <img src="images/fun_fact.jpeg" alt="Image of a soccer stadium and fun facts about soccer" width="300"> <!-- Image for fun facts -->
-        </section>
+                    <ol> <!-- Ordered list -->
+                        <li>Direct free kick – awarded for major fouls</li>
+                        <li>Indirect free kick – awarded for minor infractions</li>
+                        <li>Penalty kick – awarded when a foul occurs inside the penalty area</li>
+                    </ol>
+                </section>
+            </div>
+
+            <!-- Section 2 -->
+            <!-- Only for CSS targeting -->
+            <div class="col-md-6">
+                <section class="content-box h-100" id="fun_facts">
+                    <h2>Fun Facts</h2> <!-- Section subtitle -->
+                    <p>Soccer is full of interesting facts and records. The fastest goal ever scored was in just a few seconds, and some players have scored hundreds of goals in their careers.</p> <!-- Paragraph 1 -->
+                    <p>The largest stadiums in the world can hold over 100,000 spectators. Famous matches like the World Cup finals attract viewers from every country. Soccer is not only a sport but also a global cultural phenomenon.</p> <!-- Paragraph 2 -->
+                    <!-- Image for fun facts -->
+                    <img src="images/fun_fact.jpeg" alt="Image of a soccer stadium and fun facts about soccer" width="300" class="img-fluid">
+                </section>
+            </div>
+        </div>
     </main>
 
-    <!-- Footer with link back to the index -->
+    <!-- Footer with button back to the index -->
     <footer>
         <nav>
-            <a href="index.html">Back to Home</a> 
+            <!-- Bootstrap styled button -->
+            <a href="index.html" class="btn btn-secondary">Back to Home</a>
         </nav>
     </footer>
 </body>
